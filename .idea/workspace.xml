@@ -204,7 +204,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -253,7 +253,7 @@
       <workItem from="1512736234376" duration="352000" />
       <workItem from="1516184015917" duration="3392000" />
       <workItem from="1516350918991" duration="12000" />
-      <workItem from="1537172971867" duration="1166000" />
+      <workItem from="1537172971867" duration="2313000" />
     </task>
     <servers />
   </component>

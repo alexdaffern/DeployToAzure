@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "engines": {
-    "mode":"~8.9.0"
+    "mode":"~8.9.0",
     "npm":"~5.6.0"
   },
   "scripts": {

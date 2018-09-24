@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= 'My list oh hobbies'
+  ul
+    each winner in hobbies
+      li= winner.hobby + ': ' + winner.desc
+

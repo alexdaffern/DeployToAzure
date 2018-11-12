@@ -1,12 +1,17 @@
 const mongoose =  require('mongoose');
 
-const dbURL = 'mongodb://admin:H0bbies@ds024747.mblam.com:24748/mean-workshop';
+const dbURI = 'mongodb://admin:H0bbies@ds024748.mlab.com:24748/mean-workshop';
 
-mongoose.connect(dbURL);
-
+mongoose.connect(dbURI,{ useNewUrlParser: true });
 //Connection status message
-mongoose.connection.on('connected', function() {console.log('Mongoose connected to db'};
-mongoose.connection.on('errror', function(err) {console.log('Mongoose connection error:', err};
-mongoose.connection.on('disconnected', function() {console.log('Mongoose disconnected from db'};
+mongoose.connection.on('connected', function(){
+    console.log(`Mongoose connected to ${dbURI}`);
+});
+mongoose.connection.on('error', function(err){
+    console.log('Mongoose connection error:', err);
+});
+mongoose.connection.on('disconnected', function(){
+    console.log('Mongoose disconnected');
+});
 
-require('./appSchemas');
+    require('./appSchemas');

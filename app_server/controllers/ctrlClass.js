@@ -1,7 +1,7 @@
 
-const winnerlist = function(req, res){
+const classlist = function(req, res){
     res.render('classes',{
-        winners:
+        classes:
         [
             {class:'Intoduction To Spanish 1'},
             {class:'Web Development'},
@@ -14,5 +14,5 @@ const winnerlist = function(req, res){
 };
 
 module.exports = {
-    winnerlist
+    classlist
 };

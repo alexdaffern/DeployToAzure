@@ -1,5 +1,5 @@
 
-const winnerlist = function(req, res){
+const hobbylist = function(req, res){
     res.render('hobbies',{
         hobbies:
         [
@@ -11,5 +11,5 @@ const winnerlist = function(req, res){
         ]});
 };
 module.exports = {
-    winnerlist
+    hobbylist
 };

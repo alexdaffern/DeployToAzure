@@ -1,6 +1,6 @@
 
 const classlist = function(req, res){
-    res.render('classes',{
+    res.render('class',{
         classes:
         [
             {class:'Intoduction To Spanish 1'},

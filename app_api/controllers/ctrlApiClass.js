@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const classModel = mongoose.model('class');
 
 const classList = function (req, res) {
-    classModel.find({}, function(err, classes){
+    classModel.find({}, function(err, mclass){
         if(err){
             res
                 .status(404)
@@ -13,7 +13,7 @@ const classList = function (req, res) {
         else{
             res
                 .status(200)
-                .json(classes);
+                .json(mclass);
         }
 
     });};

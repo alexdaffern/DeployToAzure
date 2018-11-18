@@ -6,21 +6,19 @@
  * before running the script
  */
 
-/* Remove all collections and documents from the current database.
- * This will not delete the database.
- */
+
 db.dropDatabase();
 
 // Creating the 'Hobbies' collection and adding some documents
 db.MyHobbies.save(
     [
-        {hobbie:'Rugby'},
-		{hobbie:'PC Building'},
-		{hobbie:'Gaming'},
-		{hobbie:'Skiing'},
-		{hobbie:'Photography'},
-		{hobbie:'Snowboarding'},
-		{hobbie:'Cooking'}
+        {hobby:'Rugby'},
+		{hobby:'PC Building'},
+		{hobby:'Gaming'},
+		{hobby:'Skiing'},
+		{hobby:'Photography'},
+		{hobby:'Snowboarding'},
+		{hobby:'Cooking'}
         
     ]
 );
@@ -38,4 +36,3 @@ db.MyClasses.save(
 );
 
 // Load command to be executed at mongo shell
-// load("C:/antonius_mean_localdev/app_api/scripts/addTestDocuments.js")

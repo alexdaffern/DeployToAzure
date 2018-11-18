@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const hobbyModel = mongoose.model('hobby');
 
 const hobbyList = function (req, res) {
-    hobbyModel.find({}, function(err, hobbies){
+    hobbyModel.find({}, function(err, hobby){
 		if(err){
 			res
 				.status(404)
@@ -13,7 +13,7 @@ const hobbyList = function (req, res) {
    	 	else{
     	    res
 				.status(200)
-        	    .json(hobbies);
+        	    .json(hobby);
    			 }
 
 });};

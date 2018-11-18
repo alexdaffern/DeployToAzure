@@ -1,6 +1,6 @@
 
 const hobbylist = function(req, res){
-    res.render('hobbies',{
+    res.render('hobby',{
         hobbies:
         [
             {hobby:'Skiing', desc:'I\'ve been downhill skiing since I was 2.' },

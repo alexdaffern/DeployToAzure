@@ -7,8 +7,8 @@ const classSchema = new mongoose.Schema({class:String});
 /* Models will contain compiled instances of the schemas
  * so they can be used in the app later on
  */
-mongoose.model('hobby', hobbySchema, 'MyHobbies');
-mongoose.model('class', classSchema,'MyClasses');
+mongoose.model('hobby', hobbySchema), 'hobbies';
+mongoose.model('class', classSchema),'classes';
 
 
 

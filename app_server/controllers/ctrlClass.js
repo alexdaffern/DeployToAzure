@@ -1,3 +1,5 @@
+const request = require('request');
+const apiURL = require('./apiURLs');
 
 const classlist = function(req, res){
     res.render('class',{

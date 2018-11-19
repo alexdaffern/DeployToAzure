@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    .row
+        h4 New Hobby
+    form(action="", method="post")
+        .form-group.row
+            label Hobby
+                input.form-control(name="hobby")
+        .form-group.row
+            button.btn-primary Add

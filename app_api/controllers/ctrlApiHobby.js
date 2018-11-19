@@ -19,9 +19,13 @@ const hobbyList = function (req, res) {
 });};
 
 const addHobby = function (req, res){
-	res
-		.status(201)
-		.json({"Add hobby" : "work in progress"});
+	hobbyModel.create(req.body, function (err, newHobby) {
+		if(err){
+			res.status(400).json(err);
+		}else{
+			res.status(201).json(newHobby);
+		}
+    })
 };
 
 module.exports = {

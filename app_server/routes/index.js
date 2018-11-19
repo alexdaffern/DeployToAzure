@@ -11,4 +11,9 @@ router.get('/', ctrlMain.index);  // Home page
 router.get('/hobby', ctrlHobby.hobbylist);
 router.get('/class', ctrlClass.classlist);
 
+router
+    .route('/hobby/add')
+    .get(ctrlHobby.showForm)
+    .post(ctrlHobby.addData);
+
 module.exports = router;

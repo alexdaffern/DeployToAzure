@@ -3,7 +3,7 @@ const apiURL = {
 
 };
 
-if(process.env.NODE_ENV==='prdoduction') {
+if(process.env.NODE_ENV==='production') {
     apiURL.server='https://daffern.azurewebsites.net';
 }
 
